@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(25, 25, 112);
+}
+
+.container {
+    min-height: 100vh;
+    max-height: 500vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 10px;
+    background-color: rgb(173, 216, 230);
+    border: none;
+    outline: none;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-popup {
+    position: fixed;
+    max-width: 400px;
+    border: 3px solid #f1f1f1;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.book-form {
+    padding: 10px;
+    background-color: white;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+#form-submit {
+    background-color: rgb(173, 216, 230);
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+#form-close{
+    float:right;
+    margin-top:-30px;
+    margin-right:-20px;
+    cursor:pointer;
+    outline: none;
+    color: #fff;
+    border: 1px solid #3b3a3a;
+    border-radius: 30px;
+    background: #605F61;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 0px;
+    padding: 11px 3px; 
+}
+
+table {
+    position: right;
+    text-align: center;
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+th {
+    position: sticky;
+    background-color: rgb(173, 216, 230);
+    top: 0;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+tbody {
+    overflow-y: auto;
+    display: block;
+    max-height: 25em; 
+ }
+
+ thead {         
+    display: table;  
+    width: 100%;
+ }
+
+ tbody tr {
+    display: table;
+    width: 100%;    
+ }
+
+ thead {
+    table-layout: fixed;
+ }
+ tbody tr {
+    table-layout: fixed;
+ }
+ th, td {
+    width: auto;
+ }   
+
+ .lib-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+ }
+
+ #lib-close, #lib-clear {
+    border: none;
+    background-color: rgb(255, 152, 152);
+    color: black;
+    opacity: 0.8;
+ }
+
+ #lib-clear {
+    background-color: rgb(180, 30, 30);
+    color: white;
+ }
